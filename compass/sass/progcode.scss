@@ -1,10 +1,44 @@
 body {
-    background: url(http://www.progcode.co/img/intro-bg.jpg) no-repeat center center fixed; 
+    overflow-x: hidden;
+}
+
+.background {
+    position: fixed;
+    z-index: -3;
+    filter: blur(2px);
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: url(../img/handshake.png) no-repeat center center fixed; 
+    background-color: #333;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+.parallax {
+    perspective: 1px;
+    height: 100vh;
     overflow-x: hidden;
+    overflow-y: auto;
+    
+    .parallax-layer {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        
+        &.base {
+            transform: translateZ(0);
+        }
+        
+        &.back {
+            transform: translateZ(-1px) scale(2);
+        }
+    }
 }
 
 .navigation {
@@ -33,11 +67,11 @@ body {
     .brand {
         font-size: 24px;
         font-weight: bold;
-        margin-left: 20px;
+        margin-left: 100px;
         color: #EEE;
         
         img {
-            max-height: 100%;
+            max-height: 65px;
         }
         
         &:hover {
@@ -203,11 +237,11 @@ body {
     }
     
     h1, p, i {
-        text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.3), -2px 4px 2px rgba(0, 0, 0, 0.1);
+        text-shadow: -2px 2px 2px rgba(0, 0, 0, 1), -2px 4px 2px rgba(0, 0, 0, 0.1);
     }
     
     h1 {
-        font-weight: 300;
+        font-weight: 600;
         font-family: 'Slim-Joe', sans-serif;
         font-size: 68px;
     }

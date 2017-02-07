@@ -1,5 +1,6 @@
 $(document).ready(function () {
     var transparent = true;
+    console.log('Ready');
     $("a").on('click', function (event) {
         if (this.hash !== "") {
             event.preventDefault();
@@ -12,14 +13,14 @@ $(document).ready(function () {
         }
     });
     
-    $(window).scroll(function () {
+    $('.parallax').scroll(function () {
         checkForNav();
     });
     
     var checkForNav = debounce(function () {
-        console.log('Checking nav' + $(document).scrollTop());
+        console.log('Checking nav' + $('.parallax').scrollTop());
         
-        if ($(document).scrollTop() > 200) {
+        if ($('.parallax').scrollTop() > 200) {
             console.log('Adding navbar-solid');
             
             if (transparent) {
