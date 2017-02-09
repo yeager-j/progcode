@@ -14,15 +14,14 @@ $(document).ready(function () {
     });
     
     $('.parallax').scroll(function () {
+        $('.top').css('opacity', calculateOpacity($('.parallax').scrollTop()));
         checkForNav();
     });
     
     var checkForNav = debounce(function () {
         console.log('Checking nav' + $('.parallax').scrollTop());
         
-        if ($('.parallax').scrollTop() > 200) {
-            console.log('Adding navbar-solid');
-            
+        if ($('.parallax').scrollTop() > 200) {            
             if (transparent) {
                 transparent = false;
                 $('.navbar-transform').addClass('navbar-solid');
@@ -34,7 +33,19 @@ $(document).ready(function () {
                 $('.navbar-transform').removeClass('navbar-solid');
             }
         }
-    }, 17);
+    }, 5);
+    
+    function calculateOpacity(distanceFromTop) {
+        var max = 300;
+        
+        if(distanceFromTop > max) {
+            return 0;
+        }
+        
+        var numerator = max - distanceFromTop;
+        
+        return numerator / max;
+    }
 
     function debounce(func, wait, immediate) {
         var timeout;
