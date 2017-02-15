@@ -32,6 +32,7 @@ body {
         left: 0;
         
         &.base {
+            position: absolute;
             transform: translateZ(0);
         }
         
@@ -181,7 +182,7 @@ body {
     top: 0;
     left: 0;
     background-image: url(../img/pattern.png);
-    opacity: 0.5;
+    opacity: 0.33;
     z-index: -2;
 }
 

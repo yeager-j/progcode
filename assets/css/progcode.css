@@ -37,14 +37,15 @@ body {
 }
 /* line 34, ../../compass/sass/progcode.scss */
 .parallax .parallax-layer.base {
+  position: absolute;
   transform: translateZ(0);
 }
-/* line 38, ../../compass/sass/progcode.scss */
+/* line 39, ../../compass/sass/progcode.scss */
 .parallax .parallax-layer.back {
   transform: translateZ(-1px) scale(2);
 }
 
-/* line 44, ../../compass/sass/progcode.scss */
+/* line 45, ../../compass/sass/progcode.scss */
 .navigation {
   display: inline-block;
   font-family: 'Slim-Joe', sans-serif;
@@ -57,45 +58,45 @@ body {
   transition: all 0.3s;
   line-height: 90px;
 }
-/* line 56, ../../compass/sass/progcode.scss */
+/* line 57, ../../compass/sass/progcode.scss */
 .navigation.navbar-solid {
   background-color: white;
   border-bottom: 1px solid #CCC;
   line-height: 70px;
   height: 70px;
 }
-/* line 62, ../../compass/sass/progcode.scss */
+/* line 63, ../../compass/sass/progcode.scss */
 .navigation.navbar-solid a {
   color: #333;
 }
-/* line 67, ../../compass/sass/progcode.scss */
+/* line 68, ../../compass/sass/progcode.scss */
 .navigation .brand {
   font-size: 24px;
   font-weight: bold;
   margin-left: 100px;
   color: #EEE;
 }
-/* line 73, ../../compass/sass/progcode.scss */
+/* line 74, ../../compass/sass/progcode.scss */
 .navigation .brand img {
   padding-top: 2px;
   max-height: 65px;
 }
-/* line 78, ../../compass/sass/progcode.scss */
+/* line 79, ../../compass/sass/progcode.scss */
 .navigation .brand:hover {
   text-decoration: none;
 }
-/* line 82, ../../compass/sass/progcode.scss */
+/* line 83, ../../compass/sass/progcode.scss */
 .navigation .brand:before {
   bottom: -10px;
 }
-/* line 87, ../../compass/sass/progcode.scss */
+/* line 88, ../../compass/sass/progcode.scss */
 .navigation .links {
   display: inline;
   float: right;
   margin-right: 10%;
   list-style-type: none;
 }
-/* line 93, ../../compass/sass/progcode.scss */
+/* line 94, ../../compass/sass/progcode.scss */
 .navigation .links li {
   display: inline;
   font-family: 'Verlag-Book', sans-serif;
@@ -105,13 +106,13 @@ body {
   font-size: 13px;
   margin-left: 25px;
 }
-/* line 104, ../../compass/sass/progcode.scss */
+/* line 105, ../../compass/sass/progcode.scss */
 .navigation a {
   position: relative;
   color: #DDD;
   text-decoration: none;
 }
-/* line 110, ../../compass/sass/progcode.scss */
+/* line 111, ../../compass/sass/progcode.scss */
 .navigation a.underline:before {
   content: "";
   position: absolute;
@@ -126,40 +127,40 @@ body {
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
-/* line 125, ../../compass/sass/progcode.scss */
+/* line 126, ../../compass/sass/progcode.scss */
 .navigation a.underline:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
-/* line 134, ../../compass/sass/progcode.scss */
+/* line 135, ../../compass/sass/progcode.scss */
 .navigation a:hover {
   color: #3ABEF1;
   transition: color 0.4s;
 }
 
-/* line 141, ../../compass/sass/progcode.scss */
+/* line 142, ../../compass/sass/progcode.scss */
 .separator-container {
   text-align: center;
   position: relative;
 }
 @media (min-width: 768px) {
-  /* line 145, ../../compass/sass/progcode.scss */
+  /* line 146, ../../compass/sass/progcode.scss */
   .separator-container .separator {
     width: 20em;
   }
 }
-/* line 149, ../../compass/sass/progcode.scss */
+/* line 150, ../../compass/sass/progcode.scss */
 .separator-container .separator {
   color: black;
   margin: 2em auto;
   font-size: 120%;
 }
-/* line 153, ../../compass/sass/progcode.scss */
+/* line 154, ../../compass/sass/progcode.scss */
 .separator-container .separator i {
   font-size: 150%;
 }
-/* line 158, ../../compass/sass/progcode.scss */
+/* line 159, ../../compass/sass/progcode.scss */
 .separator-container .line-separator:before {
   float: left;
   display: block;
@@ -168,7 +169,7 @@ body {
   margin-top: 13px;
   border: 1px solid black;
 }
-/* line 166, ../../compass/sass/progcode.scss */
+/* line 167, ../../compass/sass/progcode.scss */
 .separator-container .line-separator:after {
   float: right;
   display: block;
@@ -178,7 +179,7 @@ body {
   border: 1px solid black;
 }
 
-/* line 177, ../../compass/sass/progcode.scss */
+/* line 178, ../../compass/sass/progcode.scss */
 .cover {
   position: fixed;
   height: 100%;
@@ -186,11 +187,11 @@ body {
   top: 0;
   left: 0;
   background-image: url(../img/pattern.png);
-  opacity: 0.5;
+  opacity: 0.33;
   z-index: -2;
 }
 
-/* line 188, ../../compass/sass/progcode.scss */
+/* line 189, ../../compass/sass/progcode.scss */
 .top-wrapper {
   font-size: 14px;
   text-align: center;
@@ -199,7 +200,7 @@ body {
   position: relative;
 }
 
-/* line 196, ../../compass/sass/progcode.scss */
+/* line 197, ../../compass/sass/progcode.scss */
 .triangle {
   position: absolute;
   bottom: -20px;
@@ -209,16 +210,16 @@ body {
   border-width: 0 50vw 15vh 50vw;
   border-color: transparent transparent white transparent;
 }
-/* line 205, ../../compass/sass/progcode.scss */
+/* line 206, ../../compass/sass/progcode.scss */
 .triangle.left {
   left: -50%;
 }
-/* line 209, ../../compass/sass/progcode.scss */
+/* line 210, ../../compass/sass/progcode.scss */
 .triangle.right {
   right: -50%;
 }
 
-/* line 214, ../../compass/sass/progcode.scss */
+/* line 215, ../../compass/sass/progcode.scss */
 .invert-triangle {
   position: relative;
   left: 0;
@@ -229,12 +230,12 @@ body {
   border-width: 15vh 50vw 0vh 50vw;
   border-color: white transparent transparent transparent;
 }
-/* line 224, ../../compass/sass/progcode.scss */
+/* line 225, ../../compass/sass/progcode.scss */
 .invert-triangle.grey {
   border-color: #F3F3F3 transparent transparent transparent;
 }
 
-/* line 229, ../../compass/sass/progcode.scss */
+/* line 230, ../../compass/sass/progcode.scss */
 .top {
   position: absolute;
   width: 100%;
@@ -245,57 +246,57 @@ body {
   z-index: 10;
   color: white;
 }
-/* line 239, ../../compass/sass/progcode.scss */
+/* line 240, ../../compass/sass/progcode.scss */
 .top .btn {
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 1px;
 }
-/* line 245, ../../compass/sass/progcode.scss */
+/* line 246, ../../compass/sass/progcode.scss */
 .top .btn img {
   height: 20px;
   width: 20px;
   vertical-align: middle;
 }
-/* line 252, ../../compass/sass/progcode.scss */
+/* line 253, ../../compass/sass/progcode.scss */
 .top h1, .top p, .top i {
   text-shadow: -2px 2px 2px black, -2px 4px 2px rgba(0, 0, 0, 0.1);
 }
-/* line 256, ../../compass/sass/progcode.scss */
+/* line 257, ../../compass/sass/progcode.scss */
 .top h1 {
   font-weight: 600;
   font-family: 'Slim-Joe', sans-serif;
   font-size: 68px;
 }
-/* line 262, ../../compass/sass/progcode.scss */
+/* line 263, ../../compass/sass/progcode.scss */
 .top .title {
   text-transform: uppercase;
 }
-/* line 266, ../../compass/sass/progcode.scss */
+/* line 267, ../../compass/sass/progcode.scss */
 .top p {
   font-family: 'Verlag-Book', sans-serif;
   font-size: 24px;
 }
-/* line 271, ../../compass/sass/progcode.scss */
+/* line 272, ../../compass/sass/progcode.scss */
 .top .separator {
   color: white;
 }
-/* line 276, ../../compass/sass/progcode.scss */
+/* line 277, ../../compass/sass/progcode.scss */
 .top .line-separator:before {
   border-color: white;
 }
-/* line 280, ../../compass/sass/progcode.scss */
+/* line 281, ../../compass/sass/progcode.scss */
 .top .line-separator:after {
   border-color: white;
 }
 
-/* line 286, ../../compass/sass/progcode.scss */
+/* line 287, ../../compass/sass/progcode.scss */
 .base .section-wrapper ~ .section-wrapper {
   margin-top: 0;
 }
 
-/* line 290, ../../compass/sass/progcode.scss */
+/* line 291, ../../compass/sass/progcode.scss */
 .section-wrapper {
   margin-top: 20px;
   width: 100%;
@@ -303,31 +304,31 @@ body {
   text-align: center;
   background-color: white;
 }
-/* line 297, ../../compass/sass/progcode.scss */
+/* line 298, ../../compass/sass/progcode.scss */
 .section-wrapper.grey {
   background-color: #F3F3F3;
 }
-/* line 301, ../../compass/sass/progcode.scss */
+/* line 302, ../../compass/sass/progcode.scss */
 .section-wrapper .section {
   padding: 40px;
   padding-left: 10%;
   padding-right: 10%;
 }
-/* line 306, ../../compass/sass/progcode.scss */
+/* line 307, ../../compass/sass/progcode.scss */
 .section-wrapper .section.narrow {
   padding-left: 20%;
   padding-right: 20%;
 }
-/* line 311, ../../compass/sass/progcode.scss */
+/* line 312, ../../compass/sass/progcode.scss */
 .section-wrapper .section h3 {
   text-align: center;
   font-size: 32px;
 }
-/* line 316, ../../compass/sass/progcode.scss */
+/* line 317, ../../compass/sass/progcode.scss */
 .section-wrapper .section p {
   text-align: left;
 }
-/* line 320, ../../compass/sass/progcode.scss */
+/* line 321, ../../compass/sass/progcode.scss */
 .section-wrapper .section img {
   max-width: 100%;
 }

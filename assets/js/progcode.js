@@ -15,6 +15,7 @@ $(document).ready(function () {
     
     $('.parallax').scroll(function () {
         $('.top').css('opacity', calculateOpacity($('.parallax').scrollTop()));
+        $('.cover').css('opacity', calculateOpacity($('.parallax').scrollTop()) / 3);
         checkForNav();
     });
     
